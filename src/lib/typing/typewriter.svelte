@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 
 	export let typingDelayMs = 50;
+	export let inbetweenNodeDelayMs = 150;
 	export let skipTyping = false;
 
 	let parent: HTMLElement;
@@ -43,6 +44,7 @@
 		for (let i = 0; i < element.childNodes.length; i++) {
 			const child = element.childNodes[i];
 			await typewriteTree(child, fill);
+			await wait(inbetweenNodeDelayMs);
 		}
 	}
 
