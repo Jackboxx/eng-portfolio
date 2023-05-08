@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Button from '../utils/button.svelte';
-	import Slider from '../utils/slider.svelte';
 	import Typewriter from './typewriter.svelte';
 
 	let speed = 100;
@@ -8,21 +6,11 @@
 </script>
 
 <div
-	class="coding inverse-toggle overflow-hidde relative h-full rounded-lg bg-gray-800 px-5 pb-6 pt-4 font-mono
-              text-sm leading-normal text-gray-100 subpixel-antialiased shadow-lg"
+	class="overflow-hidde text-md relative h-screen
+   bg-black p-4
+              font-mono text-white subpixel-antialiased"
 >
-	<div class="top mb-2 flex">
-		<div class="h-3 w-3 rounded-full bg-red-500" />
-		<div class="ml-2 h-3 w-3 rounded-full bg-orange-300" />
-		<div class="ml-2 h-3 w-3 rounded-full bg-green-500" />
-	</div>
-	<div class="absolute bottom-0 right-0 w-[20%] min-w-[300px] p-4">
-		<Slider name={''} bind:value={speed} min={10} max={150} />
-		<div class="mt-4">
-			<Button onClick={() => (skipTyping = true)}>Skip</Button>
-		</div>
-	</div>
-	<div class="w-[50%]">
+	<div class="crt-screen h-full">
 		<Typewriter typingDelayMs={160 - speed} {skipTyping}>
 			<slot />
 		</Typewriter>
@@ -30,4 +18,207 @@
 </div>
 
 <style>
+	.crt-screen {
+		text-shadow: 0 0 5px #c8c8c8;
+		animation: textShadow 1.6s infinite;
+	}
+
+	.crt-screen::before {
+		content: ' ';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+			linear-gradient(
+				90deg,
+				rgba(255, 0, 0, 0.06),
+				rgba(0, 255, 0, 0.02),
+				rgba(0, 0, 255, 0.06)
+			);
+		z-index: 2;
+		background-size: 100% 2px, 3px 100%;
+		pointer-events: none;
+	}
+
+	.crt-screen::after {
+		content: ' ';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(18, 16, 16, 0.1);
+		opacity: 0;
+		z-index: 2;
+		pointer-events: none;
+		animation: flicker 0.15s infinite;
+	}
+
+	@keyframes flicker {
+		0% {
+			opacity: 0.27861;
+		}
+		5% {
+			opacity: 0.34769;
+		}
+		10% {
+			opacity: 0.23604;
+		}
+		15% {
+			opacity: 0.90626;
+		}
+		20% {
+			opacity: 0.18128;
+		}
+		25% {
+			opacity: 0.83891;
+		}
+		30% {
+			opacity: 0.65583;
+		}
+		35% {
+			opacity: 0.67807;
+		}
+		40% {
+			opacity: 0.26559;
+		}
+		45% {
+			opacity: 0.84693;
+		}
+		50% {
+			opacity: 0.96019;
+		}
+		55% {
+			opacity: 0.08594;
+		}
+		60% {
+			opacity: 0.20313;
+		}
+		65% {
+			opacity: 0.71988;
+		}
+		70% {
+			opacity: 0.53455;
+		}
+		75% {
+			opacity: 0.37288;
+		}
+		80% {
+			opacity: 0.71428;
+		}
+		85% {
+			opacity: 0.70419;
+		}
+		90% {
+			opacity: 0.7003;
+		}
+		95% {
+			opacity: 0.36108;
+		}
+		100% {
+			opacity: 0.24387;
+		}
+	}
+
+	@keyframes textShadow {
+		0% {
+			text-shadow: 0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+				-0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		5% {
+			text-shadow: 2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+				-2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		10% {
+			text-shadow: 0.02956275843481219px 0 1px rgba(0, 30, 255, 0.5),
+				-0.02956275843481219px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		15% {
+			text-shadow: 0.40218538552878136px 0 1px rgba(0, 30, 255, 0.5),
+				-0.40218538552878136px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		20% {
+			text-shadow: 3.4794037899852017px 0 1px rgba(0, 30, 255, 0.5),
+				-3.4794037899852017px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		25% {
+			text-shadow: 1.6125630401149584px 0 1px rgba(0, 30, 255, 0.5),
+				-1.6125630401149584px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		30% {
+			text-shadow: 0.7015590085143956px 0 1px rgba(0, 30, 255, 0.5),
+				-0.7015590085143956px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		35% {
+			text-shadow: 3.896914047650351px 0 1px rgba(0, 30, 255, 0.5),
+				-3.896914047650351px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		40% {
+			text-shadow: 3.870905614848819px 0 1px rgba(0, 30, 255, 0.5),
+				-3.870905614848819px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		45% {
+			text-shadow: 2.231056963361899px 0 1px rgba(0, 30, 255, 0.5),
+				-2.231056963361899px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		50% {
+			text-shadow: 0.08084290417898504px 0 1px rgba(0, 30, 255, 0.5),
+				-0.08084290417898504px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		55% {
+			text-shadow: 2.3758461067427543px 0 1px rgba(0, 30, 255, 0.5),
+				-2.3758461067427543px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		60% {
+			text-shadow: 2.202193051050636px 0 1px rgba(0, 30, 255, 0.5),
+				-2.202193051050636px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		65% {
+			text-shadow: 2.8638780614874975px 0 1px rgba(0, 30, 255, 0.5),
+				-2.8638780614874975px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		70% {
+			text-shadow: 0.48874025155497314px 0 1px rgba(0, 30, 255, 0.5),
+				-0.48874025155497314px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		75% {
+			text-shadow: 1.8948491305757957px 0 1px rgba(0, 30, 255, 0.5),
+				-1.8948491305757957px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		80% {
+			text-shadow: 0.0833037308038857px 0 1px rgba(0, 30, 255, 0.5),
+				-0.0833037308038857px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		85% {
+			text-shadow: 0.09769827255241735px 0 1px rgba(0, 30, 255, 0.5),
+				-0.09769827255241735px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		90% {
+			text-shadow: 3.443339761481782px 0 1px rgba(0, 30, 255, 0.5),
+				-3.443339761481782px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		95% {
+			text-shadow: 2.1841838852799786px 0 1px rgba(0, 30, 255, 0.5),
+				-2.1841838852799786px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+		100% {
+			text-shadow: 2.6208764473832513px 0 1px rgba(0, 30, 255, 0.5),
+				-2.6208764473832513px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+		}
+	}
+
+	@keyframes glow {
+		from {
+			text-shadow: 0 0 100px #fff, 0 0 110px #fff, 0 0 120px #fff, 0 0 130px #fff,
+				0 0 140px #fff, 0 0 150px #fff, 0 0 160px #fff;
+		}
+		to {
+			text-shadow: 0 0 110px #fff, 0 0 120px #fff, 0 0 130px #fff, 0 0 140px #fff,
+				0 0 150px #fff, 0 0 160px #fff, 0 0 170px #fff;
+		}
+	}
 </style>
