@@ -12,6 +12,11 @@
 			href: 'worksheet-note',
 			position: { x: 150, y: 120 },
 		},
+		{
+			title: 'TED Talks',
+			href: 'ted-talks',
+			position: { x: 280, y: 100 },
+		},
 	];
 </script>
 
