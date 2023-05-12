@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	export let typingDelayMs = 50;
-	export let inbetweenNodeDelayMs = 150;
+	export let inbetweenNodeDelayMs = 75;
 	export let skipTyping = false;
 
 	let parent: HTMLElement;

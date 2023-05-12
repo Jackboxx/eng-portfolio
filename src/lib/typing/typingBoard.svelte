@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Typewriter from './typewriter.svelte';
 
-	let speed = 110;
+	let speed = 140;
 	let skipTyping = false;
 </script>
 
