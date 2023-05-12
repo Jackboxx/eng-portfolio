@@ -17,6 +17,16 @@
 			href: 'ted-talks',
 			position: { x: 280, y: 100 },
 		},
+		{
+			title: 'WIP',
+			href: 'WIP',
+			position: { x: 260, y: 190 },
+		},
+		{
+			title: 'WIP',
+			href: 'WIP',
+			position: { x: 310, y: 230 },
+		},
 	];
 </script>
 

@@ -113,11 +113,11 @@
 <div class="flex h-screen items-center justify-center bg-gray-800">
 	<div
 		bind:this={parent}
-		class="crt-screen relative h-[600px] w-[600px] border-4 border-solid border-gray-700 bg-black shadow-2xl"
+		class="crt-screen relative h-[700px] w-[700px] border-4 border-solid border-gray-700 bg-black shadow-2xl"
 	>
 		<div class="absolute left-[50%] translate-x-[-50%] text-3xl text-white">
 			Table of Contents
 		</div>
-		<canvas height="600" width="600" bind:this={canvas} />
+		<canvas height="700" width="700" bind:this={canvas} />
 	</div>
 </div>
