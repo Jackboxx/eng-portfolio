@@ -55,7 +55,7 @@
 		{
 			title: 'WIP',
 			href: 'WIP',
-			position: { x: 690, y: 660 },
+			position: { x: 650, y: 620 },
 		},
 	];
 </script>

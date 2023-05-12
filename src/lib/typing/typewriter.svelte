@@ -69,3 +69,9 @@
 		<slot />
 	</div>
 {/key}
+
+<style>
+	* {
+		font-family: 'JetBrains Mono', monospace;
+	}
+</style>

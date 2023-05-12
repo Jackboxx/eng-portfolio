@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    font-family: 'JetBrains Mono', monospace;
-}
-
 .crt-screen {
     text-shadow: 0 0 5px #c8c8c8;
     animation: textShadow 1.6s infinite;
