@@ -28,34 +28,9 @@
 			position: { x: 390, y: 250 },
 		},
 		{
-			title: 'WIP',
-			href: 'WIP',
+			title: 'Self Evaluation',
+			href: 'self-evaluation',
 			position: { x: 370, y: 350 },
-		},
-		{
-			title: 'WIP',
-			href: 'WIP',
-			position: { x: 320, y: 320 },
-		},
-		{
-			title: 'WIP',
-			href: 'WIP',
-			position: { x: 350, y: 420 },
-		},
-		{
-			title: 'WIP',
-			href: 'WIP',
-			position: { x: 580, y: 520 },
-		},
-		{
-			title: 'WIP',
-			href: 'WIP',
-			position: { x: 620, y: 590 },
-		},
-		{
-			title: 'WIP',
-			href: 'WIP',
-			position: { x: 650, y: 620 },
 		},
 	];
 </script>
