@@ -13,6 +13,7 @@
 		title: string,
 		href: string,
 		position: { x: number; y: number },
+		elements: HTMLElement[],
 	) {
 		let { x, y } = position;
 		let w = 16;
@@ -32,6 +33,7 @@
 		childElement.classList.add('star-link-info');
 
 		element.appendChild(childElement);
+		elements.push(element);
 		parent.appendChild(element);
 	}
 
@@ -41,6 +43,7 @@
 		spikes: number,
 		outerRadius: number,
 		innerRadius: number,
+		color: string,
 	) {
 		let rot = (Math.PI / 2) * 3;
 
@@ -67,9 +70,9 @@
 		ctx.lineTo(originalX, originalY - outerRadius);
 		ctx.closePath();
 		ctx.lineWidth = 5;
-		ctx.strokeStyle = '#28b0ff';
+		ctx.strokeStyle = color;
 		ctx.stroke();
-		ctx.fillStyle = '#28b0ff';
+		ctx.fillStyle = color;
 		ctx.fill();
 	}
 
@@ -77,24 +80,30 @@
 		parent: HTMLElement,
 		canvas: HTMLCanvasElement | undefined,
 		entries: TocEntry[],
+		color: string,
+		hrefPrefix: string,
+		elements: HTMLElement[],
 	) {
 		if (!canvas) return;
 		const context = canvas.getContext('2d');
 		if (!context) return;
 
+		elements.forEach((e) => e.remove());
+
 		for (let i = 0; i < entries.length; i++) {
 			createTocEntryElement(
 				parent,
 				entries[i].title,
-				entries[i].href,
+				hrefPrefix + entries[i].href,
 				entries[i].position,
+				elements,
 			);
-			drawStar(context, entries[i].position, 5, 2, 1);
+			drawStar(context, entries[i].position, 5, 2, 1, color);
 			if (i > 0) {
 				context.moveTo(entries[i - 1].position.x, entries[i - 1].position.y);
 				context.lineTo(entries[i].position.x, entries[i].position.y);
 				context.lineWidth = 3;
-				context.strokeStyle = '#28b0ff';
+				context.strokeStyle = color;
 				context.stroke();
 			}
 		}
@@ -106,8 +115,25 @@
 
 	let canvas: HTMLCanvasElement;
 	let parent: HTMLElement;
+	let elements: HTMLElement[] = [];
 
-	$: drawToc(parent, canvas, entries);
+	let isPlane = false;
+	let color = '#28b0ff';
+	let hrefPrefix = '';
+
+	const onClick = () => {
+		if (isPlane) {
+			color = '#28b0ff';
+			hrefPrefix = '';
+		} else {
+			color = '#ea580c';
+			hrefPrefix = 'plane/';
+		}
+
+		isPlane = !isPlane;
+	};
+
+	$: drawToc(parent, canvas, entries, color, hrefPrefix, elements);
 </script>
 
 <div class="flex h-screen items-center justify-center bg-gray-800">
@@ -115,6 +141,15 @@
 		bind:this={parent}
 		class="crt-screen relative h-[550px] w-[700px] border-4 border-solid border-gray-700 bg-black shadow-2xl"
 	>
+		<div class="absolute bottom-2 left-2 z-30 flex items-center gap-2">
+			<div
+				class="h-10 w-10 cursor-pointer select-none rounded-lg"
+				style={`background: ${isPlane ? '#28b0ff' : '#ea580c'}`}
+				on:click={onClick}
+				on:keydown={undefined}
+			/>
+			<div class="text-white">⇐ Click here to turn {isPlane ? 'on' : 'off'} styling</div>
+		</div>
 		<div class="absolute left-[50%] translate-x-[-50%] text-3xl text-white">
 			Table of Contents
 		</div>
