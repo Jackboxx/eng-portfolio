@@ -13,24 +13,29 @@
 			position: { x: 150, y: 120 },
 		},
 		{
+			title: 'Presentation',
+			href: 'WIP',
+			position: { x: 230, y: 250 },
+		},
+		{
 			title: 'TED Talks',
 			href: 'ted-talks',
-			position: { x: 280, y: 100 },
+			position: { x: 350, y: 120 },
 		},
 		{
 			title: 'Research Journal',
 			href: 'research-journal',
-			position: { x: 310, y: 200 },
+			position: { x: 400, y: 200 },
 		},
 		{
 			title: 'WIP',
 			href: 'WIP',
-			position: { x: 390, y: 250 },
+			position: { x: 550, y: 280 },
 		},
 		{
 			title: 'Self Evaluation',
 			href: 'self-evaluation',
-			position: { x: 370, y: 350 },
+			position: { x: 590, y: 420 },
 		},
 	];
 </script>
