@@ -9,13 +9,10 @@
 	class="overflow-hidde text-md relative
    min-h-screen bg-black p-4 font-mono text-white subpixel-antialiased"
 >
-	<input
-		class="sticky left-full top-4"
-		type="range"
-		min="10"
-		max="160"
-		bind:value={speed}
-	/>
+	<div class="sticky top-4 flex justify-between">
+		<a class="cursor-pointer" href="/">⇦ Back</a>
+		<input type="range" min="10" max="160" bind:value={speed} />
+	</div>
 
 	<div class="crt-screen h-full">
 		<Typewriter typingDelayMs={160 - speed} {skipTyping}>
