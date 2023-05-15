@@ -36,10 +36,13 @@
 <h4 id="ideas-and-ideologies">Ideas and Ideologies</h4>
 <p>
 	• The world is often more complicated than it might seem and big ideas claiming to
-	answer everything or a lot of things usually don’t work in practice. • Ideologies are a
-	great way of inspiring change and uniting people but often are to general to work for
-	everything. • Problems should be addressed on a case by case bases with the help of
-	experts in the problem domain.
+	answer everything or a lot of things usually don’t work in practice.
+	<br />
+	• Ideologies are a great way of inspiring change and uniting people but often are to general
+	to work for everything.
+	<br />
+	• Problems should be addressed on a case by case bases with the help of experts in the problem
+	domain.
 </p>
 <h4 id="data-and-interpretation">Data and Interpretation</h4>
 <p>
