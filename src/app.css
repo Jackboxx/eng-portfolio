@@ -30,6 +30,14 @@ h6 {
     font-size: 0.7em;
 }
 
+a {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: inside;
+}
+
 .crt-screen {
     text-shadow: 0 0 5px #c8c8c8;
     animation: textShadow 1.6s infinite;

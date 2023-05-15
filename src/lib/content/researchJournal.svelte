@@ -6,15 +6,16 @@
 	based on perception: in this case there is cognitive, affective/emotional, and
 	behavioral parts. Job satisfaction can also be evaluated on a global level (does an
 	employee enjoy their job) and a local level (does an employee enjoy a specific part of
-	their job). &gt;&gt; 1. “Job satisfaction can be measured in cognitive (evaluative),
-	affective (or emotional), and behavioral components.” Also, when looking for surveys on
-	employee satisfaction instead of results I mainly found surveys that managers could give
-	to their employees instead of studies. I am curious to see how/if the things employees
-	want are different than what managers say they want. At the moment I am concerned that
-	modern advice on how to increase employee job satisfaction is being prioritized over
-	actions that a business could take to directly increase the material well being over
-	their employees (i.e. Raising wages). If my believe will hold up to further research
-	remains to be seen.
+	their job). <br />
+	&gt;&gt; 1. “Job satisfaction can be measured in cognitive (evaluative), affective (or emotional),
+	and behavioral components.” <br />
+	Also, when looking for surveys on employee satisfaction instead of results I mainly found
+	surveys that managers could give to their employees instead of studies. I am curious to see
+	how/if the things employees want are different than what managers say they want. At the moment
+	I am concerned that modern advice on how to increase employee job satisfaction is being prioritized
+	over actions that a business could take to directly increase the material well being over
+	their employees (i.e. Raising wages). If my believe will hold up to further research remains
+	to be seen.
 </p>
 <h4 id="sources">Sources</h4>
 <ol type="1">
@@ -61,11 +62,11 @@
 <h3 id="deeper-theory">2. Deeper Theory</h3>
 <p>
 	Research into job satisfaction began in the 1930s and mainly focused on the nature of
-	the job being worked and the relation ship with coworkers and supervisors. &gt;&gt; 2.
-	“The assessment of job satisfaction through employee anonymous surveys became
-	commonplace in the 1930s. Although prior to that time there was the beginning of
-	interest in employee attitudes, there were only a handful of studies published.” In the
-	following decades several models of job satisfaction emerged.
+	the job being worked and the relation ship with coworkers and supervisors. <br />
+	&gt;&gt; 2. “The assessment of job satisfaction through employee anonymous surveys became
+	commonplace in the 1930s. Although prior to that time there was the beginning of interest
+	in employee attitudes, there were only a handful of studies published.” <br />
+	In the following decades several models of job satisfaction emerged.
 </p>
 <h4 id="affect-theory">Affect Theory:</h4>
 <p>
@@ -123,13 +124,15 @@
 <h3 id="research-and-data">3. Research and Data</h3>
 <p>
 	According to the research papers I have read so far salary seems to be the least
-	significant. &gt;&gt; 3. “The results show that worst assessed facet was (1) salary and
-	security…”. On the other hand factors like leadership and nature of the job were more
-	important[2] in increasing the enjoyment an employee got out of their work. In addition,
-	the type of work (permanent or contingent employment) seem to have a measurable effect
-	on job satisfaction[1]. However, it needs to be mentioned that some contingent workers
-	have similar job satisfaction as permanent workers. I am interested to see if this might
-	be related to the type of clients these contingent workers interact with.
+	significant. <br />
+	&gt;&gt; 3. “The results show that worst assessed facet was (1) salary and security…”.
+	<br />
+	On the other hand factors like leadership and nature of the job were more important[2] in
+	increasing the enjoyment an employee got out of their work. In addition, the type of work
+	(permanent or contingent employment) seem to have a measurable effect on job satisfaction[1].
+	However, it needs to be mentioned that some contingent workers have similar job satisfaction
+	as permanent workers. I am interested to see if this might be related to the type of clients
+	these contingent workers interact with.
 </p>
 <h4 id="sources-2">Sources</h4>
 <ol type="1">
@@ -185,14 +188,15 @@
 	The literature strongly indicates that only temporary agency workers in the contingent
 	worker landscape have significantly lower job satisfaction than there permanently
 	employed peers. This dissatisfaction seems to largely be due to a lack of satisfaction
-	with the content of their jobs. &gt;&gt; 2. “Decomposition of this gap indicates that
-	the major part is due to the low satisfaction experienced by agency workers regarding
-	the content of their jobs.” In addition, a lower job security and lower average salary
-	also slightly contribute to this lower satisfaction. Many modern companies that employ
-	contingent workers often due so to outsource menial tasks that they don’t want to deal
-	with themselves which results in contingent jobs that are not satisfying to the workers
-	doing them. This leads me to believe that there might be a decrease in job satisfaction
-	in more than just the contingent sector but this requires further research.
+	with the content of their jobs. <br />
+	&gt;&gt; 2. “Decomposition of this gap indicates that the major part is due to the low satisfaction
+	experienced by agency workers regarding the content of their jobs.” <br />
+	In addition, a lower job security and lower average salary also slightly contribute to this
+	lower satisfaction. Many modern companies that employ contingent workers often due so to
+	outsource menial tasks that they don’t want to deal with themselves which results in contingent
+	jobs that are not satisfying to the workers doing them. This leads me to believe that there
+	might be a decrease in job satisfaction in more than just the contingent sector but this
+	requires further research.
 </p>
 <h4 id="sources-3">Sources</h4>
 <ol type="1">
