@@ -26,7 +26,8 @@
 		list-style: none;
 	}
 	:global(ul > li) {
-		margin-left: 8px;
+		margin-left: 12px;
+		margin-bottom: 8px;
 	}
 
 	input[type='range'] {

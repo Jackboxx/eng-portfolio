@@ -136,7 +136,14 @@
 	$: drawToc(parent, canvas, entries, color, hrefPrefix, elements);
 </script>
 
-<div class="flex h-screen items-center justify-center bg-gray-800">
+<div class="flex h-screen flex-col items-center justify-start gap-16 bg-gray-800">
+	<div class="mt-16 w-full text-center text-white">
+		<div class="m-2 text-4xl">Lucy Gschwantner</div>
+		<div class="text-xs text-yellow-500">
+			⚠ This website will not look right on screens smaller than a tablet screen ⚠
+		</div>
+	</div>
+
 	<div
 		bind:this={parent}
 		class="crt-screen relative h-[550px] w-[700px] border-4 border-solid border-gray-700 bg-black shadow-2xl"
