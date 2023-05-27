@@ -40,4 +40,6 @@
 	];
 </script>
 
-<TableOfContents {entries} />
+<div class="overflow-scroll bg-gray-800">
+	<TableOfContents {entries} />
+</div>
